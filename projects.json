@@ -1,0 +1,14 @@
+[
+    {
+        "name": "TRICKS: The Meeting",
+        "live": "https://wonderful-jones-41570f.netlify.app/",
+        "git": "https://github.com/adamrossbenton/tricksproject",
+        "image": "https://i.imgur.com/S1G23Zl.png"
+    },
+    {
+        "name": "Halfprice",
+        "live": "https://halfpriceapp.herokuapp.com/restaurants",
+        "git": "https://github.com/adamrossbenton/project2",
+        "image": "https://i.imgur.com/Mp86l8c.png"
+    }
+]

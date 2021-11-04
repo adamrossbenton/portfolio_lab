@@ -1,0 +1,41 @@
+////////////////////////////////////////////////
+// Dependencies
+////////////////////////////////////////////////
+const express = require("express")
+const cors = require("cors")
+
+const projects = require("./projects.json")
+const about = require("./about.json")
+
+const app = express()
+
+////////////////////////////////////////////////
+// Middleware
+////////////////////////////////////////////////
+
+app.use(cors())
+
+////////////////////////////////////////////////
+// Routes
+////////////////////////////////////////////////
+
+// Home
+app.get("/", (req,res) => {
+    res.send("Hello portfolio")
+})
+
+// Get Projects
+app.get("/projects", (req,res) => {
+    res.json(projects)
+})
+
+// Get About
+app.get("/about", (req,res) => {
+    res.json(about)
+})
+
+////////////////////////////////////////////////
+// Listener
+////////////////////////////////////////////////
+const PORT = process.env.PORT || 4000
+app.listen(PORT, () => {console.log(`On ${PORT}`)})
